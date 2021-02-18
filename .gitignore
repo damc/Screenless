@@ -1,0 +1,4 @@
+.idea
+screenless/__pycache__
+screenless/**/__pycache__
+screenless.egg-info
