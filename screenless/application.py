@@ -1,4 +1,3 @@
-from .event_dispatcher import EventDispatcher
 from .io import KeyboardInput
 from .io import SpeakerOutput
 
@@ -7,29 +6,17 @@ class Application:
     def __init__(
             self,
             commands,
-            default_command=None,
+            starting_command=None,
             input_=None,
             output=None
     ):
         self.commands = commands
-        self.default_command = default_command
+        self.starting_command = starting_command
         self.input = input_ or KeyboardInput()
         self.output = output or SpeakerOutput()
 
     def run(self):
-        self.input.on_input = EventDispatcher(
-            {'command': self._handle_commands}
-        )
-        self.output.run()
-        self.default_command()
-        self.input.run()
-
-    def exit(self):
-        self.input.exit()
-        self.output.exit()
-
-    def _handle_commands(self, input_):
-        pass
+        self.starting_command()
 
 
 class Command:
