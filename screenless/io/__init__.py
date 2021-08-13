@@ -1,2 +1,3 @@
 from .keyboard_input import KeyboardInput
-from .speaker_output import SpeakerOutput
+from .google_speaker_output import GoogleSpeakerOutput
+from .offline_speaker_output import OfflineSpeakerOutput

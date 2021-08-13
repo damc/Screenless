@@ -1,1 +1,6 @@
+gtts
+playsound
+pyaudio
+pydub
+pyttsx3
 readchar

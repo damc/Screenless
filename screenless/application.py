@@ -1,5 +1,5 @@
 from .io import KeyboardInput
-from .io import SpeakerOutput
+from .io import OfflineSpeakerOutput
 
 
 class Application:
@@ -13,7 +13,7 @@ class Application:
         self.commands = commands
         self.starting_command = starting_command
         self.input = input_ or KeyboardInput()
-        self.output = output or SpeakerOutput()
+        self.output = output or OfflineSpeakerOutput()
 
     def run(self):
         self.starting_command()

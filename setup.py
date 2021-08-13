@@ -5,7 +5,7 @@ setup(
     author='Damian',
     author_email='damiamcz@mailfence.com',
     packages=['screenless'],
-    install_requires=['readchar'],
+    install_requires=['gtts', 'playsound', 'pyaudio', 'pydub', 'pyttsx3', 'readchar'],
     version='0.1',
     license='MIT',
     description=(

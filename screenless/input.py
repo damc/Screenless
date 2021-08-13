@@ -1,10 +1,10 @@
-INPUT_CONTROL = 1
-INPUT_BACKSPACE = 2
-INPUT_LEFT = 3
-INPUT_RIGHT = 4
-INPUT_UP = 5
-INPUT_DOWN = 6
-INPUT_EXIT = 7
+INPUT_CONTROL = ' control '
+INPUT_BACKSPACE = ' backspace '
+INPUT_LEFT = ' left '
+INPUT_RIGHT = ' right '
+INPUT_UP = ' up '
+INPUT_DOWN = ' down '
+INPUT_EXIT = ' exit '
 
 
 class Input:
